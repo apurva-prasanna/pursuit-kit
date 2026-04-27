@@ -1,0 +1,12 @@
+# Personal company context — do not push to public repo
+context/company.md
+context/usps.md
+context/market.md
+context/value-story-bank.md
+
+# Live deal context — contains real client information
+deal_context.md
+
+# OS files
+.DS_Store
+Thumbs.db
