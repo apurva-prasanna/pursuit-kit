@@ -28,34 +28,49 @@ Every command reads your GTM context (what you sell, your USPs, your proof point
 
 ## Quick Start
 
-### Paid tier — Claude Code or Codex CLI (recommended)
+### Option 1: Claude Code (recommended)
 
-Requires a paid Claude or ChatGPT plan.
-
+Clone the repo:
 ```bash
 git clone https://github.com/apurva-prasanna/pursuit-kit.git
 cd pursuit-kit
 ```
+Or download it as a ZIP and unzip.
 
-**For Claude Code:**
+Open the folder in Claude Code:
 ```bash
 claude
 ```
 
-**For Codex CLI:**
+Say `kickoff`. On first run, kickoff detects that your context files are empty and walks you through setup — starting with your company website URL.
+
+Requires any paid Claude plan. Also works in Cursor or any environment with file system access.
+
+---
+
+### Option 2: OpenAI Codex
+
+Clone the repo:
+```bash
+git clone https://github.com/apurva-prasanna/pursuit-kit.git
+cd pursuit-kit
+```
+Or download it as a ZIP and unzip.
+
+Open the folder in Codex:
 ```bash
 codex
 ```
 
-Then say `kickoff`. On first run, kickoff detects that your context files are empty, copies the templates from `context/` automatically, and walks you through setup — starting with your company website URL. No manual file renaming required.
+Say `kickoff`.
 
-Once setup is complete, kickoff asks whether you're starting an immediate pursuit or have time to prepare properly, then routes you accordingly.
+Requires any paid ChatGPT plan.
 
-Your context files and deal data stay local. The `.gitignore` ensures nothing from `context/` or `deal_context.md` gets pushed to GitHub.
+---
 
-### Free tier — Claude Projects, ChatGPT Projects, or Copilot Notebooks
+### Option 3: No CLI required (Claude Projects, ChatGPT, or Copilot)
 
-No Claude Code or Codex required. Works with any paid or free plan.
+No Claude Code or Codex required. Works with free plans.
 
 Instructions for each platform are in the `free-tier/` folder:
 
@@ -64,6 +79,10 @@ Instructions for each platform are in the `free-tier/` folder:
 - `copilot-notebook-instructions.txt` — for Microsoft Copilot Notebooks (enterprise)
 
 Create one Project or Notebook per client pursuit. The conversation history maintains deal context between sessions.
+
+---
+
+For Options 1 and 2: your context files and deal data stay local. The `.gitignore` ensures nothing from `context/` or `deal_context.md` gets pushed to GitHub.
 
 ---
 
